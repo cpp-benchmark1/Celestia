@@ -35,7 +35,7 @@ jobs:
         git submodule update --init
         sudo apt-get install --ignore-missing libboost-dev libepoxy-dev libjpeg-dev libpng-dev libgl1-mesa-dev libeigen3-dev libfmt-dev libfreetype6-dev libglu1-mesa-dev libsdl2-dev
         mkdir build
-        cmake -B build -DENABLE_SDL=ON
+        cmake -B build -DENABLE_SDL=ON -DENABLE_CELX=OFF
         make
     - name: Free disk space
       run: |
